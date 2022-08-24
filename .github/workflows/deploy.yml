@@ -1,5 +1,6 @@
 # Source: https://focisolutions.com/2020/04/github-actions-deploying-an-angular-app/
 name: Deploy To GitHub Pages
+
 on:
   push:
     branches:
@@ -28,6 +29,7 @@ jobs:
       with:
         name: deploy_dist
         path: dist
+
 deploy:
   name: Deploy to Github Pages
   runs-on: ubuntu-latest
